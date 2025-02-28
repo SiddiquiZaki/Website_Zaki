@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaki Siddiqui - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            text-align: center;
+            
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background: rgba(26, 26, 26, 0.315);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,volleyball') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        .section p {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+        }
+        footer {
+            background: rgba(26, 26, 26, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+        }
+        .ankitty {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            margin: 30px 0;
+            padding: 30px;
+            background: rgb(88, 88, 88);
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+
+      
+        #matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none; 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="matrix"></canvas>
+
+    <header>Zaki Siddiqui</header>
+    <div class="container">
+        <div class="ankitty">
+            The One and Only Zaki Siddiqui
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I'm a 16-year-old student at The Roman Ridge School with a passion for computer science and volleyball. I love the challenge of solving problems through coding, and at the same time, I enjoy the teamwork and energy that come with playing volleyball. Creativity is a big part of who I am, whether it's coming up with innovative ideas in tech or finding new strategies on the court. I'm also a natural leader, always striving to guide and support those around me. Above all, I believe in kindness and treating people with respect and making a positive impact wherever I go.
+            </p>
+            <div class="gallery">
+                <img src="C:\Users\siddi\Downloads\WhatsApp Image 2025-02-21 at 7.06.50 PM (1).jpeg" alt="Zaki Siddiqui">
+                <img src="C:\Users\siddi\Downloads\WhatsApp Image 2025-02-21 at 7.06.50 PM.jpeg" alt="Zaki Siddiqui">
+                <img src="C:\Users\siddi\Downloads\WhatsApp Image 2025-02-21 at 7.06.49 PM (1).jpeg" alt="Zaki Siddiqui">
+                <img src="C:\Users\siddi\Downloads\WhatsApp Image 2025-02-21 at 7.06.49 PM.jpeg" alt="Zaki Siddiqui">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Zaki Siddiqui 🥶
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const characters = 'Zaki Siddiqui2009';
+        const columns = Math.floor(canvas.width / 20); 
+        const drops = [];
+
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.floor(Math.random() * canvas.height);
+        }
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0F0';
+            ctx.font = '15px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = characters[Math.floor(Math.random() * characters.length)];
+                ctx.fillText(text, i * 20, drops[i] * 15);
+
+                if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        function updateMatrix(event) {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            for (let i = 0; i < drops.length; i++) {
+                if (Math.abs(i * 20 - mouseX) < 50 && Math.abs(drops[i] * 20 - mouseY) < 50) {
+                    drops[i] += 2;
+                }
+            }
+        }
+
+        setInterval(drawMatrix, 50);
+        window.addEventListener('mousemove', updateMatrix);
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
